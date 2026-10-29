@@ -1,1 +1,3 @@
 \n```\n*.exe\n*.o\nbuild/\n```\n
+__pycache__/
+inventory.db

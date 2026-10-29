@@ -52,9 +52,9 @@ INSERT INTO Role (name) VALUES
     ('Управляющий');
 
 INSERT INTO User (login, passwordHash, RoleID) VALUES
-    ('ivanov',  'hash_1', 1),
-    ('petrova', 'hash_2', 1),
-    ('sidorov', 'hash_3', 2);
+    ('ivanov',  '6f86ded7f21c4fa38e743da647865b1fba355b6535758132285772e8d2fde2fc', 1),
+    ('petrova', 'e30f8d2095a74f90a374186a7b8106bbe59b67b38f5ebcc937c312e70506c670', 1),
+    ('sidorov', '307cd1d8dc74449d092c4d7683a525ecd93f867181ed0013e3ff213306c5eca1', 2);
 
 INSERT INTO Inventory (name, type, status, quantity) VALUES
     ('Футбольный мяч',     'Мячи',             'исправен',  10),
