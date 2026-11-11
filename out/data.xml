@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+  <operation>
+    <OperationID>1</OperationID>
+    <type>issue</type>
+    <date>2026-10-10 09:00:00</date>
+    <comment>Выдано 5 мячей на тренировку</comment>
+    <inventory>
+      <name>Футбольный мяч</name>
+      <type>Мячи</type>
+      <status>в ремонте</status>
+      <quantity>10</quantity>
+    </inventory>
+    <user>
+      <login>ivanov</login>
+    </user>
+  </operation>
+  <operation>
+    <OperationID>2</OperationID>
+    <type>return</type>
+    <date>2026-10-10 11:00:00</date>
+    <comment>Возвращено 5 мячей</comment>
+    <inventory>
+      <name>Футбольный мяч</name>
+      <type>Мячи</type>
+      <status>в ремонте</status>
+      <quantity>10</quantity>
+    </inventory>
+    <user>
+      <login>ivanov</login>
+    </user>
+  </operation>
+  <operation>
+    <OperationID>3</OperationID>
+    <type>repair</type>
+    <date>2026-10-12 14:30:00</date>
+    <comment>Отправлена на ремонт после поломки</comment>
+    <inventory>
+      <name>Скакалка</name>
+      <type>Гимнастика</type>
+      <status>в ремонте</status>
+      <quantity>2</quantity>
+    </inventory>
+    <user>
+      <login>sidorov</login>
+    </user>
+  </operation>
+  <operation>
+    <OperationID>4</OperationID>
+    <type>writeoff</type>
+    <date>2026-10-13 10:00:00</date>
+    <comment>Сетка порвана, ремонту не подлежит</comment>
+    <inventory>
+      <name>Волейбольная сетка</name>
+      <type>Сетки</type>
+      <status>списан</status>
+      <quantity>1</quantity>
+    </inventory>
+    <user>
+      <login>sidorov</login>
+    </user>
+  </operation>
+  <operation>
+    <OperationID>5</OperationID>
+    <type>check</type>
+    <date>2026-10-14 16:00:00</date>
+    <comment>Плановая проверка, всё в порядке</comment>
+    <inventory>
+      <name>Гантели 5 кг</name>
+      <type>Силовой инвентарь</type>
+      <status>исправен</status>
+      <quantity>9</quantity>
+    </inventory>
+    <user>
+      <login>sidorov</login>
+    </user>
+  </operation>
+  <operation>
+    <OperationID>6</OperationID>
+    <type>check</type>
+    <date>2026-10-29 07:51:13</date>
+    <comment>Плановая проверка</comment>
+    <inventory>
+      <name>Футбольный мяч</name>
+      <type>Мячи</type>
+      <status>в ремонте</status>
+      <quantity>10</quantity>
+    </inventory>
+    <user>
+      <login>sidorov</login>
+    </user>
+  </operation>
+  <operation>
+    <OperationID>7</OperationID>
+    <type>issue</type>
+    <date>2026-10-29 08:25:19</date>
+    <comment>Выдано 3 шт.</comment>
+    <inventory>
+      <name>Гантели 5 кг</name>
+      <type>Силовой инвентарь</type>
+      <status>исправен</status>
+      <quantity>9</quantity>
+    </inventory>
+    <user>
+      <login>0</login>
+    </user>
+  </operation>
+  <operation>
+    <OperationID>8</OperationID>
+    <type>repair</type>
+    <date>2026-10-29 11:28:57</date>
+    <comment>Отправлено на ремонт</comment>
+    <inventory>
+      <name>Футбольный мяч</name>
+      <type>Мячи</type>
+      <status>в ремонте</status>
+      <quantity>10</quantity>
+    </inventory>
+    <user>
+      <login>sidorov</login>
+    </user>
+  </operation>
+</data>

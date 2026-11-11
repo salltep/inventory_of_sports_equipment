@@ -1,0 +1,122 @@
+[
+  {
+    "OperationID": 1,
+    "type": "issue",
+    "date": "2026-10-10 09:00:00",
+    "comment": "Выдано 5 мячей на тренировку",
+    "inventory": {
+      "name": "Футбольный мяч",
+      "type": "Мячи",
+      "status": "в ремонте",
+      "quantity": 10
+    },
+    "user": {
+      "login": "ivanov"
+    }
+  },
+  {
+    "OperationID": 2,
+    "type": "return",
+    "date": "2026-10-10 11:00:00",
+    "comment": "Возвращено 5 мячей",
+    "inventory": {
+      "name": "Футбольный мяч",
+      "type": "Мячи",
+      "status": "в ремонте",
+      "quantity": 10
+    },
+    "user": {
+      "login": "ivanov"
+    }
+  },
+  {
+    "OperationID": 3,
+    "type": "repair",
+    "date": "2026-10-12 14:30:00",
+    "comment": "Отправлена на ремонт после поломки",
+    "inventory": {
+      "name": "Скакалка",
+      "type": "Гимнастика",
+      "status": "в ремонте",
+      "quantity": 2
+    },
+    "user": {
+      "login": "sidorov"
+    }
+  },
+  {
+    "OperationID": 4,
+    "type": "writeoff",
+    "date": "2026-10-13 10:00:00",
+    "comment": "Сетка порвана, ремонту не подлежит",
+    "inventory": {
+      "name": "Волейбольная сетка",
+      "type": "Сетки",
+      "status": "списан",
+      "quantity": 1
+    },
+    "user": {
+      "login": "sidorov"
+    }
+  },
+  {
+    "OperationID": 5,
+    "type": "check",
+    "date": "2026-10-14 16:00:00",
+    "comment": "Плановая проверка, всё в порядке",
+    "inventory": {
+      "name": "Гантели 5 кг",
+      "type": "Силовой инвентарь",
+      "status": "исправен",
+      "quantity": 9
+    },
+    "user": {
+      "login": "sidorov"
+    }
+  },
+  {
+    "OperationID": 6,
+    "type": "check",
+    "date": "2026-10-29 07:51:13",
+    "comment": "Плановая проверка",
+    "inventory": {
+      "name": "Футбольный мяч",
+      "type": "Мячи",
+      "status": "в ремонте",
+      "quantity": 10
+    },
+    "user": {
+      "login": "sidorov"
+    }
+  },
+  {
+    "OperationID": 7,
+    "type": "issue",
+    "date": "2026-10-29 08:25:19",
+    "comment": "Выдано 3 шт.",
+    "inventory": {
+      "name": "Гантели 5 кг",
+      "type": "Силовой инвентарь",
+      "status": "исправен",
+      "quantity": 9
+    },
+    "user": {
+      "login": "0"
+    }
+  },
+  {
+    "OperationID": 8,
+    "type": "repair",
+    "date": "2026-10-29 11:28:57",
+    "comment": "Отправлено на ремонт",
+    "inventory": {
+      "name": "Футбольный мяч",
+      "type": "Мячи",
+      "status": "в ремонте",
+      "quantity": 10
+    },
+    "user": {
+      "login": "sidorov"
+    }
+  }
+]
