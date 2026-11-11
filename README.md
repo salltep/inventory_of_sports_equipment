@@ -11,6 +11,7 @@
 - [Use Case диаграмма](#use-case-диаграмма)
 - [Структура репозитория](#структура-репозитория)
 - [Сборка и запуск](#сборка-и-запуск)
+- [Выгрузка данных (JSON, CSV, XML, YAML)](#выгрузка-данных-json-csv-xml-yaml)
 
 ## Описание проекта
 
@@ -63,13 +64,16 @@ inventory_of_sports_equipment/
 ├── .gitignore
 ├── README.md
 ├── main.py                 # точка входа в программу
+├── export_data.py          # выгрузка данных в JSON, CSV, XML, YAML
+├── requirements.txt        # зависимости (PyYAML)
 ├── database/
 │   ├── database.py         # подключение к SQLite (get_connection)
 │   └── schema.sql          # схема БД и тестовые данные
 ├── models/                 # модели данных (dataclass)
-├── repositories/           # работа с БД, CRUD-операции
+├── repositories/           # работа с БД, CRUD-операции, запрос для выгрузки
 ├── services/               # бизнес-логика
 ├── ui/                     # консольный интерфейс (меню, авторизация)
+├── out/                    # результат выгрузки: data.json, data.csv, data.xml, data.yaml
 └── docs/
     └── diagrams/
         ├── usecase.puml    # исходник диаграммы (PlantUML)
@@ -101,3 +105,19 @@ python main.py
 | Управляющий | `sidorov` | `sidorov123` |
 | Тренер | `ivanov` | `ivanov123` |
 | Тренер | `petrova` | `petrova123` |
+
+## Выгрузка данных (JSON, CSV, XML, YAML)
+
+Скрипт `export_data.py` выгружает таблицу `Operation` вместе со связанными данными (инвентарь и логин пользователя) в четыре файла в папке `out/` (папка создаётся автоматически):
+
+- `data.json`, `data.xml`, `data.yaml` — связанные данные вложены в объекты `inventory` и `user`;
+- `data.csv` — вложенные поля объединены в одну строку (`inventory_name`, `user_login` и т.д.).
+
+Запуск (один раз установить зависимость, затем выгрузить данные):
+
+```
+pip install -r requirements.txt
+python export_data.py
+```
+
+Чтобы выгрузить другую таблицу, достаточно изменить настройки `TABLE` и `RELATIONS` в начале `export_data.py`. Код выгрузки менять не нужно: SQL-запрос с `JOIN` строится автоматически (`repositories/export_repository.py`), а сериализация в четыре формата выполняется в `services/export_service.py`.
